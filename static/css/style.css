@@ -111,7 +111,7 @@ nav {
     text-decoration: none;
     padding:0.7em 0.7em;
     margin:0 0.3em 0.3em 0;
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .menu a:hover {
