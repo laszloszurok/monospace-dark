@@ -144,7 +144,7 @@ nav {
 }
 
 footer {
-    background: #101010;
+    background: var(--sec-bg);
     padding: 3em 0;
     line-height: 2em;
     position: absolute;
