@@ -1,7 +1,7 @@
 :root {
-    --main-bg: #181a1b;
+    --main-bg: #12141c;
     --main-fg: #e8e6e3;
-    --sec-bg: #151515;
+    --sec-bg: #0c0d17;
     --link-fg: #7c43bd;
     --link-fg-hover: #9c03fd;
 }
@@ -41,6 +41,10 @@ a, a:visited, a:active {
 
 a:hover {
     color: var(--link-fg-hover);
+}
+
+.post-list {
+    list-style-type: none;
 }
 
 .post-list a {
@@ -87,6 +91,11 @@ nav {
     align-items: center;
     background: var(--main-bg);
     z-index: 5;
+}
+
+.header {
+    max-width: initial;
+    background: var(--sec-bg);
 }
 
 #logo-img {
@@ -316,6 +325,7 @@ code.language-terminal::before {
     footer { padding: 2em; }
     .menu a { padding: 0; }
     .menu ul { margin-bottom: 1em; }
+    .post-list { padding: 0; }
 }
 
 @media only screen and (max-width: 1700px) {
