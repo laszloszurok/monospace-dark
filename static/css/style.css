@@ -328,6 +328,10 @@ code.language-terminal::before {
     .post-list { padding: 0; }
 }
 
+@media only screen and (max-width: 520px) {
+    .message { padding: 0; }
+}
+
 @media only screen and (max-width: 1700px) {
     #TableOfContents { font-size: 1em; }
     .banner { margin-top: -4em; }
