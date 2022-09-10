@@ -9,32 +9,42 @@
 
 body { font-family: "Fira Code", monospace; }
 
-code {
+main p, main ul { font-size: 1.1rem; }
+
+main code {
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
+  font-size: 1rem;
 }
 
-.menu a { 
+pre code {
+    font-size: 0.85rem;
+}
+
+.header { 
     font-family: "Fira Code", monospace;
     font-weight: bold; 
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
-.title, .message { font-size: 0.9em; }
+.title { font-size: 2rem; }
+
+.article-meta .date { font-size: 1.35rem; }
+
+.message { font-size: 0.9rem; }
 
 .banner { font-family: "Fira Code", monospace; }
 
 .post-list {
     font-family: "Fira Code", monospace;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
-footer { font-size: 0.9em; }
+footer { font-size: 0.9rem; }
 
 @media only screen and (max-width: 450px) {
-    .title { font-size: 0.7em; }
-    .date { font-size: 0.9em; }
-    .ascii { font-size: 0.8em; }
-    h2 { font-size: 1.1em; }
+    .title { font-size: 1.35rem; }
+    .article-meta .date { font-size: 1rem; }
+    .ascii { font-size: 0.7rem; }
+    h2 { font-size: 1.2rem; }
     ul { padding: 0 1rem; }
 }
