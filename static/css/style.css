@@ -191,7 +191,10 @@ main {
     margin-top: -50vh;
 }
 
-main p { text-align: justify; }
+main p { 
+    text-align: justify; 
+    line-height: 1.5rem;
+}
 
 blockquote {
     background: #f9f9f9;
@@ -212,12 +215,23 @@ th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 /* code blocks and terminal commands */
+code {
+    background: #262b33;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+}
+
 pre {
     padding: 1em;
     background: var(--sec-bg);
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     overflow-x: auto;
+}
+
+pre code {
+    background: var(--sec-bg);
+    padding: initial;
 }
 
 .language-terminal {
