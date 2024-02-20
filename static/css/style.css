@@ -171,7 +171,7 @@ nav {
 }
 
 .wrapper {
-    margin: 10em auto 0 auto;
+    margin: 10em auto 10em auto;
     min-height: calc(100vh - 23.4em);
     max-width: var(--content-width);
 }
@@ -229,7 +229,7 @@ img, iframe, video { max-width: 100%; }
 
 main {
     hyphens: auto;
-    margin: -50vh auto 0 auto;
+    margin: -50vh auto 10em auto;
     max-width: var(--content-width);
 }
 
