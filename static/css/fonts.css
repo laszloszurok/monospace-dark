@@ -20,6 +20,8 @@ pre code {
     font-size: 0.85rem;
 }
 
+h2 { font-size: 1.3rem; }
+
 .header { 
     font-family: "Fira Code", monospace;
     font-weight: bold; 
