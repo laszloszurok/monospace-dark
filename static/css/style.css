@@ -2,9 +2,13 @@
     --main-bg: #12141c;
     --main-fg: #e8e6e3;
     --sec-bg: #0c0d17;
-    --link-fg: #7c43bd;
-    --link-fg-hover: #9c03fd;
+    --link-fg: #55f;
+    --link-fg-hover: #77f;
     --content-width: 800px;
+    --dim-fg: #777;
+    --list-item-border-bottom-color: #222;
+    --list-item-fg: #d8d7d6;
+    --list-item-hover-fg: #fff;
 }
 
 /* giving some offset for anchors, so 
@@ -50,13 +54,34 @@ a:hover {
     color: var(--link-fg-hover);
 }
 
-.post-list {
-    list-style-type: none;
+.list-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.post-list a {
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid var(--list-item-border-bottom-color);
+    padding: 0.7em 0;
+}
+
+.list-item a {
+    color: var(--list-item-fg);
+    flex: 1;
     text-decoration: none;
-    font-weight: bold;
+}
+
+.list-item a:hover {
+    color: var(--list-item-hover-fg);
+}
+
+.list-item .date {
+    text-align: right;
+    width: 35%; /* adjust the width as needed */
+    color: var(--dim-fg);
+}
+
 }
 
 /* next/prev buttons at the end of posts */
@@ -351,7 +376,6 @@ code.language-terminal::before {
     footer { padding: 2em; }
     .menu a { padding: 0; }
     .menu ul { margin-bottom: 1em; }
-    .post-list { padding: 0; }
 }
 
 @media only screen and (max-width: 520px) {
