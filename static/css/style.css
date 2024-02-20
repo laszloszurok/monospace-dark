@@ -10,11 +10,8 @@
 /* giving some offset for anchors, so 
  * the navbar won't cover them after 
  * scrolling to them */
-:target:before {
-    content: "";
-    display: block;
-    height: 70px;
-    margin: -70px 0 0;
+:target {
+    scroll-margin-top: 65px;
 }
 
 html {
