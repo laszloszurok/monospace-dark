@@ -82,6 +82,17 @@ a:hover {
     color: var(--dim-fg);
 }
 
+/* link to all notes on home page */
+#show-all-btn {
+    margin-top: 2em;
+}
+
+#show-all-btn a {
+    color: var(--dim-fg);
+}
+
+#show-all-btn a:hover {
+    color: var(--main-fg);
 }
 
 /* next/prev buttons at the end of posts */
