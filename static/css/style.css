@@ -23,7 +23,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -39,13 +41,17 @@ body {
 
 /* extra space for footer */
 body::after {
-  content: '';
-  display: block;
-  height: 150px;
+    content: '';
+    display: block;
+    height: 150px;
 }
 
+.article-meta .date { color: var(--dim-fg) }
+
 /* links */
-a, a:visited, a:active { 
+a,
+a:visited,
+a:active {
     color: var(--link-fg);
     text-decoration: underline;
 }
@@ -78,7 +84,8 @@ a:hover {
 
 .list-item .date {
     text-align: right;
-    width: 35%; /* adjust the width as needed */
+    width: 35%;
+    /* adjust the width as needed */
     color: var(--dim-fg);
 }
 
@@ -103,7 +110,8 @@ a:hover {
     margin: 5em;
 }
 
-.button .previous, .button .next {
+.button .previous,
+.button .next {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -150,15 +158,19 @@ nav {
     flex: 1;
 }
 
-.menu { 
+.menu {
     flex: 3;
     text-align: right;
     text-transform: uppercase;
     padding: 0;
 }
 
-.menu li { display: inline-block; }
-.article-meta, .menu a {
+.menu li {
+    display: inline-block;
+}
+
+.article-meta,
+.menu a {
     color: var(--main-fg);
     text-decoration: none;
     padding: 0.7em 0.7em;
@@ -208,24 +220,33 @@ footer {
 }
 
 footer p {
-    margin: 0 !important; 
-    padding: 0 !important; 
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.copyright > *:not(:last-child)::after {
+.copyright>*:not(:last-child)::after {
     content: "•";
     margin: 0 0 0 0.6em;
 }
 
 .article-meta {
-    text-align: center;
-    margin-top: 5em;
+    /*text-align: center;*/
+    padding: 0;
+    max-width: var(--content-width);
+    margin: auto;
+    margin-top: 7em;
 }
 
-footer a { text-decoration: none; }
+footer a {
+    text-decoration: none;
+}
 
 /* misc elements */
-img, iframe, video { max-width: 100%; }
+img,
+iframe,
+video {
+    max-width: 100%;
+}
 
 main {
     hyphens: auto;
@@ -234,15 +255,15 @@ main {
 }
 
 main h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
 }
+
 main h2:not(:first-child) {
-    margin-top: 2.5em;
+    margin-top: 1em;
 }
 
 main p {
-    text-align: justify; 
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 blockquote {
@@ -257,11 +278,20 @@ table {
     border-bottom: 1px solid #666;
 }
 
-table thead th { border-bottom: 1px solid #ddd; }
+table thead th {
+    border-bottom: 1px solid #ddd;
+}
 
-th, td { padding: 5px; }
+th,
+td {
+    padding: 5px;
+}
 
-thead, tfoot, tr:nth-child(even) { background: #eee; }
+thead,
+tfoot,
+tr:nth-child(even) {
+    background: #eee;
+}
 
 /* code blocks and terminal commands */
 code {
@@ -284,7 +314,7 @@ pre code {
 }
 
 .language-terminal {
-    margin: 20px 0 20px -5px!important;
+    margin: 20px 0 20px -5px !important;
 }
 
 code.language-terminal::before {
@@ -294,8 +324,10 @@ code.language-terminal::before {
     top: -1px;
 }
 
-.language-bash, .language-text, .language-c {
-    margin: 20px 0 20px 0!important;
+.language-bash,
+.language-text,
+.language-c {
+    margin: 20px 0 20px 0 !important;
 }
 
 /* style for the fontawesome shortcode */
@@ -316,7 +348,6 @@ code.language-terminal::before {
     top: 5em;
     overflow-x: hidden;
     margin: 0;
-    font-size: 1.1em;
 }
 
 #TableOfContents ul {
@@ -340,7 +371,7 @@ code.language-terminal::before {
     color: var(--main-fg);
     font-family: monospace;
     display: block;
-    font-size: 1em;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
@@ -358,9 +389,13 @@ code.language-terminal::before {
         right: 0;
     }
 
-    .menu { text-align: center; }
+    .menu {
+        text-align: center;
+    }
 
-    .logo { padding-top: 1em; }
+    .logo {
+        padding-top: 1em;
+    }
 
     .banner {
         flex-direction: column;
@@ -380,25 +415,48 @@ code.language-terminal::before {
         padding: 3em 0 0 0;
         line-height: 3em;
     }
-    .button a { margin: 0; }
+
+    .button a {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 450px) {
-    footer { padding: 2em; }
-    .menu a { padding: 0; }
-    .menu ul { margin-bottom: 1em; }
+    footer {
+        padding: 2em;
+    }
+
+    .menu a {
+        padding: 0;
+    }
+
+    .menu ul {
+        margin-bottom: 1em;
+    }
 }
 
 @media only screen and (max-width: 520px) {
-    .message { padding: 0; }
+    .message {
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
-    #TableOfContents { font-size: 1em; }
-    .banner { margin-top: -4em; }
+    #TableOfContents {
+        font-size: 0.9rem;
+    }
+
+    .banner {
+        margin-top: -4em;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
-    #TableOfContents { display: none; }
-    main { margin-top: initial; }
+    #TableOfContents {
+        display: none;
+    }
+
+    main {
+        margin-top: initial;
+    }
 }
