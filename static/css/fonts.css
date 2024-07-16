@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Fira Code';
     font-style: normal;
-    font-weight: 300 700;
+    font-weight: 400;
     font-display: block;
     src: url("../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf") format('truetype'),
          url("../fonts/Fira_Code/FiraCode-VariableFont_wght.woff2") format('woff2');
@@ -9,7 +9,7 @@
 
 body { font-family: "Fira Code", monospace; }
 
-main p, main ul { font-size: 1.1rem; }
+main p, main ul { font-size: 1rem; }
 
 main code {
   font-family: "Lucida Console", Monaco, monospace;
@@ -20,7 +20,7 @@ pre code {
     font-size: 0.85rem;
 }
 
-h2 { font-size: 1.3rem; }
+h2 { font-size: 1.5rem; }
 
 .header { 
     font-family: "Fira Code", monospace;
@@ -30,7 +30,7 @@ h2 { font-size: 1.3rem; }
 
 .title { font-size: 2rem; }
 
-.article-meta .date { font-size: 1.35rem; }
+.article-meta .date { font-size: 1.1rem; }
 
 .message { font-size: 0.9rem; }
 
